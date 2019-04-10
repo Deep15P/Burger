@@ -13,6 +13,7 @@
 </ul>
 
 <h2>Ate it!</h2>
+
 <ul>
 {{#each burgers}}
 {{#if this.devoured}}
@@ -20,6 +21,8 @@
 <div>
   {{this.burger_name}}
 </div>
+ <button type="button" class="trashburger btn btn-danger" id="trashbutton" data-id="{{this.id}}"
+  data-newDevoured="{{devour}}"><span class="fa fa-trash"></span></button>
 
 {{/if}}
 {{/each}}
