@@ -1,6 +1,13 @@
-<h1> BURGERS! </h1>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">BURGERS!</h1>
+    <p class="lead">Eat your favorite burger or create your own.</p>
+  </div>
+</div>
 
-<ul>
+ <ul class="list-group list-group-flush">
+  <li class="list-group-item">
+  
 {{#each burgers}}
 {{#unless this.devoured}}
 
@@ -10,7 +17,11 @@
 
 {{/unless}}
 {{/each}}
+</li>
+  
 </ul>
+
+
 
 <h2>Ate it!</h2>
 
@@ -42,5 +53,5 @@
     <input type="radio" name="sleepy" value="0"> Awake
   </div> --}}
 
-  <button type="submit">Add burger</button>
+  <button type="submit" id="addburger">Add burger</button>
 </form>
