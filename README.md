@@ -1,7 +1,7 @@
 # Burger
 Eat - da - burger app 
 
-#### A simple full stack application
+A simple full stack application.
 
 ### How the app works
 * The user may create a burger name and input them. Once the submit button is clicked they will be added to burgers list. 
